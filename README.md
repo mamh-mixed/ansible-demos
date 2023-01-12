@@ -20,10 +20,13 @@
 
 链接: https://pan.baidu.com/s/1c5jVPMfOkD4hS406sZFMMg 
 提取码: gflj
-```
 
-# tar zxf binary_pkg.tar.gz
 ```
+# tar zxf binary_pkg_1.25.tar.gz
+# mv binary_pkg_1.25 binary_pkg
+```
+> 注：百度网盘下载的所需的分发的安装包，一定要放到root目录下，并更改解压包名，放在其他目录请更改ansible配置
+
 ### 3、修改Ansible文件
 
 修改hosts文件，根据规划修改对应IP和名称。
@@ -82,6 +85,7 @@ k8s-node2     Ready    <none>   9h    v1.25.2
 
 ### 6.2 节点扩容
 1）修改hosts，添加新节点ip
+
 ```
 # vi hosts
 ...
