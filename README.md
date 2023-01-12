@@ -69,9 +69,9 @@ cert_hosts:
 ```
 # kubectl get node
 NAME          STATUS   ROLES    AGE   VERSION
-k8s-master1   Ready    <none>   9h    v1.25.2
-k8s-node1     Ready    <none>   9h    v1.25.2
-k8s-node2     Ready    <none>   9h    v1.25.2
+k8s-master01   Ready    <none>   9h    v1.25.2
+k8s-node01     Ready    <none>   9h    v1.25.2
+k8s-node02     Ready    <none>   9h    v1.25.2
 ```
 
 ## 6、其他
@@ -90,7 +90,7 @@ k8s-node2     Ready    <none>   9h    v1.25.2
 # vi hosts
 ...
 [newnode]
-192.168.0.185 node_name=k8s-node3
+192.168.0.185 node_name=k8s-node03
 ```
 2）执行部署
 ```
